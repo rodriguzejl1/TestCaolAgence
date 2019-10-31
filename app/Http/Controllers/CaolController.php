@@ -108,7 +108,7 @@ class CaolController extends Controller
                         $porcentaje[$i] = round($porcentaje[$i], 2);
                 }
 
-              return  ['y'  => $porcentaje];
+              return response()->json(['porcentaje'  => $porcentaje], 200);
         }
 
         public function getGrafico(Request $request)
@@ -159,7 +159,7 @@ class CaolController extends Controller
                    $promedio_custo[$i] = round($suma_custos/count($consultores), 2);
                }
 
-               return ['y'  => $total, 'promedio' => $promedio_custo];
+                 return response()->json(['receitas'  => $total, 'promedio' => $promedio_custo], 200);
 
            }
 

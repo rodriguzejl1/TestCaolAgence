@@ -13,8 +13,6 @@ import numeral from 'numeral'
 import numFormat from 'vue-filter-number-format'
 import Vuelidate from 'vuelidate'
 
-import HighchartsVue from 'highcharts-vue'
-Vue.use(HighchartsVue)
 
 Vue.filter('numFormat', numFormat(numeral))
 Vue.use(Vuelidate)
